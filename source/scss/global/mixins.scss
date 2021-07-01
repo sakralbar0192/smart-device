@@ -1,0 +1,54 @@
+@mixin resetListDefaultProperties {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin resetButtonDefaultProperties {
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+}
+
+@mixin interactiveFocusEffect {
+  &:focus {
+    outline: 1px dashed $accent-color;
+  }
+}
+
+@mixin titlesFontStyles {
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+@mixin textFontStyles {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.5px;
+}
