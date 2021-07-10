@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal__wrapper {
+  background: $accent-color;
+  width: 490px;
+  height: 605px;
+  margin: auto;
+  padding: 32px 40px;
+}
+
+.modal__wrapper > button {
+  display: none;
+}
+
+.modal h3 {
+  margin: 0 0 10px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: $secondary-color;
+}
+
+.modal p {
+  @include textFontStyles;
+  margin: 0 10px 30px 0;
+  color: $secondary-color;
+}

@@ -1,0 +1,35 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 31px 41px 31px 38px;
+}
+
+.page-header__logo-wrapper {
+  flex-grow: 1;
+}
+
+.page-header__contacts {
+  margin: 0 3px 0 0;
+}
+
+@media (max-width: $desktop-width) {
+  .page-header {
+    padding: 20px 25px;
+  }
+
+  .page-header__contacts {
+    margin: 0;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding: 17px 15px;
+  }
+}
+

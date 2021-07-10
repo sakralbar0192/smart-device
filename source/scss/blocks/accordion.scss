@@ -1,0 +1,40 @@
+@media (max-width: $tablet-width) {
+  .accordion {
+    &._accordion-active {
+      .accordion__list {
+        display: none;
+      }
+
+      .accordion__title {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 16px;
+          height: 1px;
+          background: $additional-color-three;
+        }
+
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+
+      &._accordion-open {
+        .accordion__list{
+          display: flex;
+        }
+
+        .accordion__title {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

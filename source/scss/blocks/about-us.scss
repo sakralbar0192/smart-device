@@ -1,0 +1,99 @@
+.about-us {
+  padding: 20px 0;
+  margin: 0 0 88px;
+}
+
+.about-us__wrapper {
+  position: relative;
+  min-height: 305px;
+  padding: 0 35px 0 210px;
+}
+
+.about-us__wrapper h2 {
+  @include titlesFontStyles;
+  margin: 0 0 20px;
+}
+
+.about-us__text-block {
+  margin: 0 0 40px;
+}
+
+.about-us__text-block p {
+ @include textFontStyles;
+ margin: 0 0 20px;
+}
+
+.about-us__decor-block {
+  position: absolute;
+  top: 6px;
+  left: -18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 215px;
+  height: 310px;
+  background: url("../img/2005-background.png") no-repeat center;
+  background-size: fill;
+  border: 2px solid #fff;
+  overflow: visible;
+  z-index: -1;
+}
+
+.about-us__decor-block p {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: lighten;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: $desktop-width) {
+  .about-us {
+    margin: 0 0 63px;
+  }
+
+  .about-us__text-block {
+    height: 200px;
+    overflow: auto;
+  }
+
+  .about-us__decor-block {
+    top: 0px;
+    left: -27px;
+    width: 249px;
+    height: 358px;
+  }
+
+  .about-us__decor-block p {
+    font-size: 178px;
+    line-height: 251px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-us {
+    margin: 0 0 43px;
+  }
+
+  .about-us__wrapper {
+    padding: 0 15px;
+  }
+
+  .about-us__text-block {
+    height: 350px;
+    margin: 0 0 30px;
+  }
+
+  .about-us__text-block p {
+    margin: 0 0 41px;
+  }
+
+  .about-us__decor-block {
+    display: none;
+  }
+}
+

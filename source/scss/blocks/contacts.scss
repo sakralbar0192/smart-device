@@ -1,0 +1,67 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  margin: 10px 45px;
+
+  span {
+    font-family: "PT Mono";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: $secondary-color;
+  }
+
+  &:hover {
+    span {
+      color: $accent-color;
+    }
+
+    .contacts__svg {
+      fill: $secondary-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts__svg  {
+  margin: 0 18px 0 0;
+  fill: $accent-color;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts__link {
+    margin: 10px 0 17px 32px;
+
+    span {
+      @include visually-hidden;
+    }
+  }
+
+  .contacts__svg {
+    margin: 0;
+
+    &--mail {
+      width: 25px;
+      height: 19px;
+    }
+
+    &--tel {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__link {
+    margin: 0 0 5px 24px;
+  }
+}

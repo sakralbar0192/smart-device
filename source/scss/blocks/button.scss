@@ -1,0 +1,75 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 45px;
+  padding: 10px;
+  text-align: center;
+  color: $secondary-color;
+  background: inherit;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+
+  span {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background: $secondary-color;
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--accent {
+    width: 407px;
+    height: 55px;
+    padding: 15px;
+    color: $secondary-color;
+    background: $accent-color;;
+    border: 0;
+
+    span {
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+
+    &:hover {
+      color: $accent-color;
+      background: $secondary-color;
+      border: 0;
+    }
+  }
+
+  &--variant-two {
+    color: $accent-color;
+    background: $secondary-color;
+    border: 1px solid $accent-color;
+
+    span {
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      background: $accent-color;
+    }
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .button {
+    &--accent {
+      width: 380px;
+    }
+  }
+}

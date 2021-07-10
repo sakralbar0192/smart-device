@@ -1,0 +1,155 @@
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 0;
+
+  &.feedback-form --modal {
+    padding: 0;
+
+    input {
+      min-width: 100%;
+      padding: 14px 23px;
+    }
+
+    button {
+      margin: auto;
+    }
+
+    input[type="checkbox"] + label {
+      min-width: 100%;
+    }
+  }
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  @include textFontStyles;
+  color: $secondary-color;
+  background: rgba($secondary-color, 0.1);
+  border: 0;
+
+  &:hover {
+    outline: 1px solid $secondary-color;
+  }
+
+  &:focus {
+    outline: 0;
+    background: $secondary-color;
+    color: $accent-color;
+  }
+
+  &::placeholder {
+    color: $secondary-color;
+  }
+}
+
+.feedback-form input {
+  width: 270px;
+  height: 50px;
+  margin: 0 0 40px;
+  padding: 14px 16px;
+}
+
+.feedback-form textarea {
+  width: 570px;
+  height: 154px;
+  margin: 0 0 43px;
+  padding: 13px 16px;
+}
+
+.feedback-form input[type="checkbox"] + label {
+  position: relative;
+  max-width: 261px;
+  padding: 0 0 0 31px;
+  font-family: PT Mono;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $secondary-color;
+  order: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.feedback-form input[type="checkbox"]:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 7px;
+    height: 5px;
+    border-bottom: 1px solid $secondary-color;
+    border-left: 1px solid $secondary-color;
+    transform: rotate(-45deg);
+  }
+}
+
+.feedback-form button {
+  width: 270px;
+}
+
+@media (max-width: $desktop-width) {
+  .feedback__form {
+    padding: 0;
+  }
+
+  .feeadback__inner-wrapper {
+    max-width: 590px;
+  }
+
+  .feedback__form input {
+    width: 280px;
+    padding: 14px 17px;
+  }
+
+  .feedback__form textarea {
+    width: 590px;
+    height: 160px;
+    margin: 0 0 47px;
+  }
+
+  .feedback__form input[type="checkbox"] + label {
+    margin: 0 5px 0 0;
+  }
+
+  .feedback__form button {
+    width: 280px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback__form {
+    max-width: 590px;
+  }
+
+  .feedback__form input {
+    width: 290px;
+    margin: 0 0 32px;
+  }
+
+  .feedback__form textarea {
+    height: 104px;
+    margin: 0 0 30px;
+  }
+
+  .feedback__form button {
+    width: 290px;
+    margin: 0 0 33px;
+  }
+
+  .feedback__form input[type="checkbox"] + label {
+    margin: 0;
+    padding: 0 0 0 35px;
+  }
+}

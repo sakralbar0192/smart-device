@@ -34,3 +34,12 @@ img {
 .visually-hidden {
   @include visually-hidden;
 }
+
+.main-container {
+  max-width: 1230px;
+  margin: auto;
+
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
