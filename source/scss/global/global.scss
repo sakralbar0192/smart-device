@@ -26,9 +26,7 @@ img {
 }
 
 .non-scrolling-block {
-  @media (max-width: $tablet-width) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .visually-hidden {

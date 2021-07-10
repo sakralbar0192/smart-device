@@ -4,23 +4,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px 0 0;
-
-  &.feedback-form --modal {
-    padding: 0;
-
-    input {
-      min-width: 100%;
-      padding: 14px 23px;
-    }
-
-    button {
-      margin: auto;
-    }
-
-    input[type="checkbox"] + label {
-      min-width: 100%;
-    }
-  }
 }
 
 .feedback-form input,
@@ -57,6 +40,7 @@
   height: 154px;
   margin: 0 0 43px;
   padding: 13px 16px;
+  resize: none;
 }
 
 .feedback-form input[type="checkbox"] + label {
@@ -151,5 +135,30 @@
   .feedback__form input[type="checkbox"] + label {
     margin: 0;
     padding: 0 0 0 35px;
+  }
+}
+
+.feedback-form--modal {
+  padding: 0;
+
+  input {
+    width: 100%;
+    margin: 0 0 32px;
+    padding: 14px 25px;
+  }
+
+  textarea {
+    height: 104px;
+    margin: 0 0 35px;
+  }
+
+  button {
+    width: 100%;
+    margin: 0 0 32px;
+  }
+
+  input[type="checkbox"] + label {
+    min-width: 100%;
+    padding: 0 20px 0 47px;
   }
 }
