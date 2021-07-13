@@ -9,7 +9,7 @@
   margin: 0 16px 0 0;
 }
 
-.social-block__link {
+.social-block a{
   &:hover {
     .social-block__svg {
       fill: $accent-color;
@@ -23,7 +23,7 @@
   }
 }
 
-.social-block__svg {
+.social-block svg {
   fill: #cdcdcd;
 }
 

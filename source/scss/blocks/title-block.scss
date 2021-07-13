@@ -4,7 +4,7 @@
   max-width: 755px;
 }
 
-.title-block__title {
+.title-block h2 {
   margin: 0 0 26px 35px;
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -15,7 +15,7 @@
   color: $secondary-color;
 }
 
-.title-block__text {
+.title-block p {
   position: relative;
   margin: 0 0 44px;
   padding: 0 0 0 132px;
@@ -36,7 +36,7 @@
   }
 }
 
-.title-block__button {
+.title-block a {
   margin: 0 0 0 132px;
 
   span:nth-child(2) {
@@ -50,13 +50,13 @@
     padding: 0 25px;
   }
 
-  .title-block__title {
+  .title-block h2 {
     margin: 0 0 28px 63px;
     font-size: 60px;
     line-height: 70.31px;
   }
 
-  .title-block__text {
+  .title-block p {
     margin: 0 0 55px;
     padding: 0 0 0 115px;
     font-size: 18px;
@@ -69,7 +69,7 @@
     }
   }
 
-  .title-block__button {
+  .title-block a {
     margin: 0 0 0 114px;
   }
 }
@@ -81,13 +81,13 @@
     padding: 0 15px;
   }
 
-  .title-block__title {
+  .title-block h2 {
     margin: 0 0 27px;
     font-size: 40px;
     line-height: 46.88px;
   }
 
-  .title-block__text {
+  .title-block p {
     margin: 0 0 41px;
     padding: 0 0 0 50px;
     font-size: 16px;
@@ -98,7 +98,7 @@
     }
   }
 
-  .title-block__button {
+  .title-block a {
     width: 287px;
     margin: 0;
 

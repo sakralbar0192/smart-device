@@ -1,15 +1,22 @@
 .logo {
-  display: flex;
-
   &--footer-logo {
-    .logo__top-text-svg {
-      fill: $logo-color-one;
+    .logo__text-wrapper {
+      margin: 6px 0 0;
     }
 
+    .logo__text-wrapper svg {
+      fill: $logo-color-one;
+    }
   }
+}
+
+.logo a {
+  display: flex;
+
+
 
   &:hover {
-    .logo__top-text-svg,
+    .logo__text-wrapper svg,
     .logo__bottom-text-svg {
       fill: $accent-color;
     }
@@ -24,7 +31,7 @@
   margin: 0 15px 0 0;
 }
 
-.logo__svg {
+.logo__image-wrapper svg {
   fill: $accent-color;
 }
 
@@ -34,44 +41,39 @@
   align-items: flex-start;
 }
 
-.logo__top-text {
+.logo__text-wrapper h1 {
   margin: 2px 0 0;
+
+  & svg {
+    fill: $secondary-color;
+  }
 }
 
-.logo__top-text-svg {
-  fill: $secondary-color;
-}
-
-.logo__bottom-text {
+.logo__text-wrapper p {
   margin: 0;
-}
 
-.logo__bottom-text-svg {
-  fill: $logo-color-two;
-}
-
-@media (max-width: $desktop-width) {
-  .logo {
-    &--header-logo {
-      .logo__top-text,
-      .logo__bottom-text {
-        @include visually-hidden;
-      }
-    }
+  & svg {
+    fill: $logo-color-two;
   }
 }
 
 @media (max-width: $tablet-width) {
   .logo {
+    &--header-logo {
+      .logo__text-wrapper {
+        @include visually-hidden;
+      }
+    }
+
     &--footer-logo {
-      .logo__svg {
+      .logo__image-wrapper svg {
         width: 52px;
         height: 52px;
       }
     }
   }
 
-  .logo__svg {
+  .logo__image-wrapper svg {
     width: 38px;
     height: 38px;
   }

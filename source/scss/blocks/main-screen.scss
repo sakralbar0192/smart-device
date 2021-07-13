@@ -30,7 +30,7 @@
   z-index: 1;
 }
 
-.main-screen__scroll-link  {
+.main-screen__wrapper > a  {
   font-family: "PT Mono";
   font-weight: 400;
   font-size: 14px;
@@ -79,7 +79,7 @@
     }
   }
 
-  .main-screen__scroll-link {
+  .main-screen__wrapper > a {
     display: none;
   }
 }

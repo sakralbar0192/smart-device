@@ -1,7 +1,7 @@
 
 /**
  * аккордион
- */
+*/
 
 const ACTIVE_ACCORDION_CLASS = '_accordion-active';
 const OPEN_ACCORDION_CLASS = '_accordion-open';
@@ -9,15 +9,15 @@ const accordionSections = document.querySelectorAll('.accordion');
 
 Array.from(accordionSections).forEach(accordion => {
   accordion.classList.add(ACTIVE_ACCORDION_CLASS);
-  const accordionTitle = accordion.querySelector('.accordion__title');
+  const accordionTitle = accordion.querySelector('h3[data-name="accordion-title"');
   accordionTitle.addEventListener('click', () => {
     accordion.classList.toggle(OPEN_ACCORDION_CLASS);
   })
 })
 
 /**
-* Модальное окно
-*/
+ * Модальное окно
+ */
 
 const OPEN_MODAL_CLASS = '_open';
 const NON_SCROLLING_BLOCK_CLASS = 'non-scrolling-block';
@@ -51,8 +51,8 @@ modalViewButton.addEventListener('click', () => {
 });
 
 /**
- * Сохранение в localStorage
- */
+* Сохранение в localStorage
+*/
 
 const forms =document.querySelectorAll('.feedback-form');
 
@@ -72,8 +72,8 @@ Array.from(forms).forEach(form => {
 })
 
 /**
- * Плавная прокрутка от якорных ссылок
- */
+* Плавная прокрутка от якорных ссылок
+*/
 
 const anchors = document.querySelectorAll('a[href="#features"], a[href="#feedback-form"]')
 
@@ -90,8 +90,8 @@ Array.from(anchors).forEach(anchor => {
 })
 
 /**
- * Маска телефона
- */
+* Маска телефона
+*/
 
 if (document.querySelector('input[type="tel"]')) {
 

@@ -113,8 +113,8 @@
 }
 
 @media (max-width: $tablet-width) {
-  .feedback__form {
-    max-width: 590px;
+  .feeadback__inner-wrapper  {
+    max-width: 100%;
   }
 
   .feedback__form input {

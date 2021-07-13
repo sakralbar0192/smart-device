@@ -1,9 +1,12 @@
-.contacts {
+.contacts__wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.contacts__link {
+.contacts__item a {
   display: flex;
   align-items: center;
   margin: 10px 45px;
@@ -31,13 +34,13 @@
   }
 }
 
-.contacts__svg  {
+.contacts__item svg  {
   margin: 0 18px 0 0;
   fill: $accent-color;
 }
 
 @media (max-width: $desktop-width) {
-  .contacts__link {
+  .contacts__item a {
     margin: 10px 0 17px 32px;
 
     span {
@@ -45,15 +48,21 @@
     }
   }
 
-  .contacts__svg {
+  .contacts__item svg {
     margin: 0;
+  }
+}
 
-    &--mail {
+.contacts__item {
+  &--mail {
+    svg{
       width: 25px;
       height: 19px;
     }
+  }
 
-    &--tel {
+  &--tel {
+    svg {
       width: 24px;
       height: 24px;
     }
@@ -61,7 +70,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .contacts__link {
+  .contacts__item a {
     margin: 0 0 5px 24px;
   }
 }

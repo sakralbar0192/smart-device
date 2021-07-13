@@ -29,19 +29,10 @@
     flex-grow: 5;
     text-align: right;
   }
-
-  a {
-    &:hover {
-      color: $accent-color;
-    }
-
-    &:active {
-      opacity: 0.7;
-    }
-  }
 }
 
-.footer-bottom-line__text {
+.footer-bottom-line a,
+.footer-bottom-line span {
   font-family: "PT Mono";
   font-weight: 400;
   font-size: 13px;
@@ -49,6 +40,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgba($additional-color, 0.5)
+
+
+}
+
+.footer-bottom-line a {
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: $desktop-width) {
