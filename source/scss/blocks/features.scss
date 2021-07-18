@@ -4,14 +4,21 @@
 
 .features__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding: 0;
   margin: 0 auto;
+  list-style: none;
+}
+
+.features__inner-wrapper {
+  display: flex;
+  margin: 0 13px 0;
+  padding: 0;
+  list-style: none;
 }
 
 .features__card {
-  margin: 0 0 30px;
+  margin: 0 12px 30px;
 }
 
 @media (max-width: $desktop-width) {
@@ -20,18 +27,31 @@
   }
 
   .features__wrapper {
-    justify-content: space-between;
     padding: 0 25px;
+  }
+
+  .features__inner-wrapper {
+    justify-content: space-between;
+    margin: 0 0 30px;
+  }
+
+  .features__card {
+    margin: 0;
   }
 }
 
 @media (max-width: $tablet-width) {
   .features {
-    margin: 0 0 18px;
+    margin: 0 0 22px;
   }
 
   .features__wrapper {
     padding: 0 15px;
+  }
+
+  .features__inner-wrapper {
+    flex-direction: column;
+    margin: 0;
   }
 
   .features__card {

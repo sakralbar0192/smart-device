@@ -19,8 +19,8 @@
 }
 
 .about-us__text-block p {
- @include textFontStyles;
- margin: 0 0 20px;
+  @include textFontStyles;
+  margin: 0 0 20px;
 }
 
 .about-us__decor-block {
@@ -61,6 +61,10 @@
     overflow: auto;
   }
 
+  .about-us__wrapper h2 {
+    margin: 0 0 25px;
+  }
+
   .about-us__decor-block {
     top: 0px;
     left: -27px;
@@ -83,8 +87,13 @@
     padding: 0 15px;
   }
 
+  .about-us__wrapper h2 {
+    margin: 0 0 19px;
+  }
+
   .about-us__text-block {
-    height: 350px;
+    max-height: 350px;
+    height: auto;
     margin: 0 0 30px;
   }
 
@@ -96,4 +105,3 @@
     display: none;
   }
 }
-

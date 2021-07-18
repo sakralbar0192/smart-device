@@ -1,6 +1,6 @@
 .feedback {
   padding: 92px 0 113px;
-  background: url("../../img/paper_airplane.png") no-repeat left 25% top 42% $accent-color;
+  background: url("../img/paper_airplane.png") no-repeat left 25% top 42% $accent-color;
 }
 
 .feedback h2 {
@@ -20,18 +20,23 @@
   justify-content: flex-end;
 }
 
-.feeadback__inner-wrapper {
+.feedback__inner-wrapper {
   max-width: 602px;
 }
 
 @media (max-width: $desktop-width) {
   .feedback {
+    width: 100%;
     padding: 80px 0 105px;
     background-image: none;
   }
 
   .feedback__wrapper {
     justify-content: center;
+  }
+
+  .feedback__inner-wrapper {
+    max-width: 590px;
   }
 
   .feedback h2 {
@@ -56,7 +61,7 @@
     margin: 0 0 25px;
   }
 
-  .feeadback__inner-wrapper {
+  .feedback__inner-wrapper {
     max-width: 100%;
     padding: 0 15px;
   }

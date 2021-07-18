@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 370px;
+  max-width: 370px;
   height: 620px;
   object-fit: cover;
   overflow: hidden;
@@ -62,7 +62,7 @@
 
 @media (max-width: $desktop-width) {
   .product__image-wrapper {
-    width: 715px;
+    max-width: 715px;
     height: 256px;
     object-fit: cover;
 
@@ -78,13 +78,13 @@
 }
 
 @media (max-width: $tablet-width) {
-  .product__image-wrapper {
-    width: 290px;
-    height: 256px;
+  .product {
+    width: 90%;
+  }
 
-    img {
-      min-width: 0;
-    }
+  .product__image-wrapper {
+    max-width: none;
+    height: 256px;
   }
 
   .product h3 {

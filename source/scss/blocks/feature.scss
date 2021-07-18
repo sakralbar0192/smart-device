@@ -1,11 +1,13 @@
 .feature {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 577px;
-  height: 300px;
-  padding: 35px 46px 48px;
-  border: 1px solid $additional-color-four;
+  min-height: 300px;
+  padding: 40px 46px 48px;
+  border-top: 1px solid $additional-color-four;
+  border-right: 1px solid $additional-color-four;
+  border-bottom: 1px solid $additional-color-four;
   border-left: 3px solid $accent-color;
   transition: all ease 2s;
 
@@ -25,13 +27,18 @@
   }
 }
 
+.feature__icon-wrapper {
+  min-height: 56px;
+}
+
 .feature svg {
   fill: $accent-color;
-  margin: 0 0 21px;
+  margin: 0 0 17px;
   transition: all ease 1s;
 }
 
 .feature h3 {
+  max-height: 68px;
   margin: 0 0 15px;
   font-family: "Roboto Condensed";
   font-weight: 400;
@@ -39,6 +46,7 @@
   line-height: 34px;
   color: $accent-color;
   transition: all ease 2s;
+  overflow: auto;
 }
 
 .feature p {
@@ -47,6 +55,7 @@
   @include textFontStyles;
   color: $primary-color;
   transition: all ease 2s;
+  overflow: auto;
 }
 
 @media (max-width: $desktop-width) {
@@ -57,15 +66,19 @@
     min-width: 345px;
     height: auto;
     min-height: 232px;
-    padding: 24px 22px 20px 24px;
+    padding: 24px 20px 20px 24px;
+  }
+
+  .feature__icon-wrapper {
+    min-height: 26px;
   }
 
   .feature svg {
-    margin: 0 0 7px;
+    margin: 0 0 3px;
   }
 
   .feature h3 {
-    margin: 0 0 10px;
+    margin: 0 0 7px;
   }
 
   .feature p  {
@@ -77,11 +90,39 @@
   .feature {
     max-width: 100%;
     min-width: 290px;
-    padding: 24px 16px 20px 24px;
+    padding: 24px 14px 20px 24px;
+
+    &--clock {
+      svg {
+        width: 29px;
+        height: 36px;
+      }
+    }
+
+    &--men {
+      svg {
+        width: 31px;
+        height: 32px;
+      }
+    }
+
+    &--conf {
+      svg {
+        width: 30px;
+        height: 26px;
+      }
+    }
+
+    &--cost {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 
   .feature svg {
-    margin: 0 0 12px;
+    margin: 0 0 9px;
   }
 
   .feature h3 {

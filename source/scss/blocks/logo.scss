@@ -4,7 +4,11 @@
       margin: 6px 0 0;
     }
 
-    .logo__text-wrapper svg {
+    .logo__text-wrapper p:first-child {
+      margin: 5px 0 -5px;
+    }
+
+    .logo__text-wrapper p:first-child svg {
       fill: $logo-color-one;
     }
   }
@@ -41,15 +45,15 @@
   align-items: flex-start;
 }
 
-.logo__text-wrapper h1 {
-  margin: 2px 0 0;
+.logo__text-wrapper p:first-child {
+  margin: 9px 0 0;
 
   & svg {
     fill: $secondary-color;
   }
 }
 
-.logo__text-wrapper p {
+.logo__text-wrapper p:last-child {
   margin: 0;
 
   & svg {

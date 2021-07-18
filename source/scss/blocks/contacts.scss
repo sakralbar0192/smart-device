@@ -9,7 +9,8 @@
 .contacts__item a {
   display: flex;
   align-items: center;
-  margin: 10px 45px;
+  min-height: 29px;
+  margin: 10px 40px;
 
   span {
     font-family: "PT Mono";

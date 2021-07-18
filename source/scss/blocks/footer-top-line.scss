@@ -2,26 +2,34 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   max-width: 1490px;
   width: 100%;
   margin: auto;
-  padding: 45px 0 35px;
+  padding: 43px 0 35px;
 }
 
 .footer-top-line__column {
   display: flex;
   flex-direction: column;
-  padding: 20px 38px;
+  padding: 20px 28px;
+
+  &--one {
+    padding: 20px 28px 20px 38px;
+  }
 
   &--two {
     box-sizing: border-box;
-    min-width: 565px;
-    padding: 20px 38px 20px 60px;
+    flex-grow: 1;
+    max-width: 485px;
+    padding: 20px 25px 20px 15px;
 
     .footer-top-line__column a {
       margin: 0 65px 0 0;
     }
+  }
+
+  &--three {
+    min-width: 410px;
   }
 }
 
@@ -30,7 +38,7 @@
 }
 
 .footer-top-line__column h3 {
-  margin: 0 0 26px;
+  margin: 0 0 26px 10px;
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 15px;
@@ -40,13 +48,20 @@
   color: $additional-color;
 }
 
+.footer-top-line__lists-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer-top-line__column-inner-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: auto;
-  max-height: 100px;
-  margin: 0;
+  margin: 0 10px 0;
   padding: 0;
   list-style: none;
 
@@ -83,6 +98,7 @@
 
 @media (max-width: $desktop-width) {
   .footer-top-line {
+    flex-wrap: wrap;
     padding: 0 0 10px;
   }
 
@@ -101,11 +117,16 @@
 
     &--two {
       min-width: 0;
+      padding: 25px 25px 25px 15px;
     }
 
     &--three {
-      padding: 25px 33px 25px 25px;
+      padding: 25px 23px 25px 35px;
     }
+  }
+
+  .footer-top-line__lists-wrapper {
+    flex-direction: column;
   }
 
   .footer-top-line__column-inner-wrapper {
@@ -126,7 +147,7 @@
   .footer-top-line {
     flex-direction: column;
     align-items: center;
-    padding: 45px 0 15px;
+    padding: 45px 0 17px;
   }
 
   .footer-top-line__column {
@@ -139,9 +160,26 @@
       flex-direction: column;
       padding: 0 15px 45px;
     }
+
+    &--two {
+      max-width: 100%;
+
+      .footer-top-line__column-inner-wrapper {
+        padding: 0 10px 0 0;
+      }
+    }
+
+    &--three {
+      min-width: 0;
+    }
+  }
+
+  .footer-top-line__lists-wrapper {
+    padding: 0 0 28px 0;
   }
 
   .footer-top-line__column-inner-wrapper {
+    margin: 0;
     padding: 0 10px 28px 0;
   }
 
@@ -155,6 +193,6 @@
 
   .footer-top-line__column h3 {
     margin: 0;
-    padding: 29px 0;
+    padding: 28px 0;
   }
 }

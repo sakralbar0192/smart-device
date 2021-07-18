@@ -5,6 +5,7 @@
 }
 
 .title-block h2 {
+  max-height: 188px;
   margin: 0 0 26px 35px;
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -17,6 +18,7 @@
 
 .title-block p {
   position: relative;
+  max-height: 105px;
   margin: 0 0 44px;
   padding: 0 0 0 132px;
   font-family: "PT Mono";
@@ -24,6 +26,7 @@
   font-size: 22px;
   line-height: 34px;
   color: $secondary-color;
+  overflow: auto;
 
   &::before {
     content: "";

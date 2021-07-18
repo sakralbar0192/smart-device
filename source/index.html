@@ -26,12 +26,11 @@
                 </svg>
               </div>
               <div class="logo__text-wrapper">
-                <h1>
-                  <span class="visually-hidden">Smart Device</span>
+                <p>
                   <svg width="133" height="20" viewBox="0 0 133 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite_auto.svg#icon-logo-top-text"></use>
                   </svg>
-                </h1>
+                </p>
                 <p>
                   <svg width="105" height="10" viewBox="0 0 105 10" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite_auto.svg#icon-logo-bottom-text"></use>
@@ -61,7 +60,7 @@
             </li>
           </ul>
         </div>
-        <button class="button" id="modal-view-button">
+        <button class="button" type="button" id="modal-view-button">
           <span>Заказать звонок</span>
         </button>
       </header>
@@ -93,36 +92,54 @@
   </section>
 
   <main>
+    <h1 class="visually-hidden">Smart Device</h1>
+
     <section class="features" id="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__wrapper main-container">
-        <li class="features__card feature">
-          <svg width="36" height="36" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#icon-feature-clock"></use>
-          </svg>
-          <h3>Оперативные сроки </h3>
-          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+        <li>
+          <ul class="features__inner-wrapper">
+            <li class="features__card feature feature--clock">
+              <div class="feature__icon-wrapper">
+                <svg width="36" height="36" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#icon-feature-clock"></use>
+                </svg>
+              </div>
+              <h3>Оперативные сроки</h3>
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            </li>
+            <li class="features__card feature feature--men">
+              <div class="feature__icon-wrapper">
+                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#icon-feature-men"></use>
+                </svg>
+              </div>
+              <h3>Крупные поставщики</h3>
+              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+            </li>
+          </ul>
         </li>
-        <li class="features__card feature">
-          <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#icon-feature-men"></use>
-          </svg>
-          <h3>Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-        </li>
-        <li class="features__card feature">
-          <svg width="36" height="31" viewBox="0 0 36 31" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#icon-feature-conf"></use>
-          </svg>
-          <h3>Полная конфиденциальность</h3>
-          <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
-        </li>
-        <li class="features__card feature">
-          <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite_auto.svg#icon-feature-cost"></use>
-          </svg>
-          <h3>Персонализация стоимости</h3>
-          <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+        <li>
+          <ul class="features__inner-wrapper">
+            <li class="features__card feature feature--conf">
+              <div class="feature__icon-wrapper">
+                <svg width="36" height="31" viewBox="0 0 36 31" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#icon-feature-conf"></use>
+                </svg>
+              </div>
+              <h3>Полная конфиденциальность</h3>
+              <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+            </li>
+            <li class="features__card feature feature--cost">
+              <div class="feature__icon-wrapper">
+                <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite_auto.svg#icon-feature-cost"></use>
+                </svg>
+              </div>
+              <h3>Персонализация стоимости</h3>
+              <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>
@@ -151,7 +168,7 @@
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="products-list__products-wrapper">
           <li class="products-list__product product">
-            <a href="">
+            <a href="#">
               <div class="product__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/product-1.webp 1x, img/product-1@2x.webp 2x">
@@ -166,7 +183,7 @@
             </a>
           </li>
           <li class="products-list__product product">
-            <a href="">
+            <a href="#">
               <div class="product__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/product-2.webp 1x, img/product-2@2x.webp 2x">
@@ -181,7 +198,7 @@
             </a>
           </li>
           <li class="products-list__product product">
-            <a href="">
+            <a href="#">
               <div class="product__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/product-3.webp 1x, img/product-3@2x.webp 2x">
@@ -201,7 +218,7 @@
 
     <section class="feedback" id="feedback-form">
       <div class="feedback__wrapper main-container">
-        <div class="feeadback__inner-wrapper">
+        <div class="feedback__inner-wrapper">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="feedback__form feedback-form" method="POST">
@@ -226,19 +243,18 @@
 
       <div class="footer-top-line__column footer-top-line__column--one">
         <div class="footer-top-line__logo logo logo--footer-logo">
-          <a>
+          <a href="#">
             <div class="logo__image-wrapper">
               <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
               </svg>
             </div>
             <div class="logo__text-wrapper">
-              <h1>
-                <span class="visually-hidden">Smart Device</span>
+              <p>
                 <svg width="147" height="20" viewBox="0 0 147 20" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#icon-logo-top-footer-text"></use>
                 </svg>
-              </h1>
+              </p>
               <p>
                 <svg width="105" height="10" viewBox="0 0 105 10" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite_auto.svg#icon-logo-bottom-text"></use>
@@ -280,29 +296,37 @@
 
       <div class="footer-top-line__column footer-top-line__column--two accordion">
         <h3 data-name="accordion-title">Разделы сайта</h3>
-        <ul class="footer-top-line__column-inner-wrapper accordion__list">
+        <ul class="footer-top-line__lists-wrapper accordion__list">
           <li>
-            <a href="#">О компании
-              </a>
+            <ul class="footer-top-line__column-inner-wrapper">
+              <li>
+                <a href="#">О компании</a>
+              </li>
+              <li>
+                <a href="#">Продукты</a>
+              </li>
+              <li>
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li>
+                <a href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="#">Продукты</a>
+            <ul class="footer-top-line__column-inner-wrapper">
+              <li>
+                <a href="#">Комплектующие</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">Производство печатных плат</a>
-          </li>
-          <li>
-            <a href="#">Монтаж печатных плат</a>
-          </li>
-          <li>
-            <a href="#">Комплектующие</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
+
         </ul>
       </div>
 
@@ -349,7 +373,7 @@
   <section class="modal" id="modal">
     <div class="modal-overlay" id="modal-overlay"></div>
     <div class="modal__wrapper">
-      <button id="close-modal-button">
+      <button type="button" id="close-modal-button">
         <span class="visually-hidden">
           Закрыть меню
         </span>
