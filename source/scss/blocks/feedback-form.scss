@@ -79,6 +79,10 @@
   }
 }
 
+.feedback-form input[type="checkbox"]:focus + label {
+  outline: 1px dashed $secondary-color;
+}
+
 .feedback-form button {
   width: 270px;
 }

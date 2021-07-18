@@ -23,6 +23,10 @@
       opacity: 0.7;
     }
   }
+
+  &:focus {
+    outline: 1px dashed $accent-color;
+  }
 }
 
 .social-block svg {

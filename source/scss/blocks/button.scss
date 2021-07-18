@@ -30,6 +30,11 @@
     opacity: 0.7;
   }
 
+  &:focus {
+    outline: 0;
+    border: dashed;
+  }
+
   &--accent {
     width: 407px;
     height: 55px;
@@ -47,6 +52,10 @@
       color: $accent-color;
       background: $secondary-color;
       border: 0;
+    }
+
+    &:focus {
+      border: dashed;
     }
   }
 

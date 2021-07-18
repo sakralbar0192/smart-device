@@ -52,6 +52,10 @@
   &:active {
     opacity: 0.7;
   }
+
+  &:focus {
+    outline: 1px dashed $accent-color;
+  }
 }
 
 @media (max-width: $desktop-width) {

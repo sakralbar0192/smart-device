@@ -3,6 +3,8 @@
 }
 
 .product a {
+  display: block;
+
   &:hover {
     p {
       background: $secondary-color;
@@ -11,6 +13,14 @@
         color: $accent-color;
       }
     }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 1px dashed $accent-color;
   }
 }
 

@@ -16,12 +16,12 @@
     border: 1px solid $accent-color;
     border-left: 3px solid $accent-color;
 
-    .feature svg {
+    svg {
       fill: $secondary-color;
     }
 
-    .feature h3,
-    .feature p {
+    h3,
+    p {
       color: $secondary-color;
     }
   }
