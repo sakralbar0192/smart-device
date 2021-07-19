@@ -53,6 +53,7 @@
   line-height: 16px;
   color: $secondary-color;
   order: 1;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -62,6 +63,14 @@
     width: 15px;
     height: 15px;
     border: 1px solid $secondary-color;
+  }
+
+  &:hover {
+    outline: 1px dashed $secondary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

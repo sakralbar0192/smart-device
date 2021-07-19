@@ -1,6 +1,6 @@
 .feedback {
   padding: 92px 0 113px;
-  background: url("../img/paper_airplane.png") no-repeat left 25% top 42% $accent-color;
+  background: $accent-color;
 }
 
 .feedback h2 {
@@ -18,6 +18,7 @@
 .feedback__wrapper {
   display: flex;
   justify-content: flex-end;
+  background: url("../img/paper_airplane.png") no-repeat right 715px top 38%;
 }
 
 .feedback__inner-wrapper {
@@ -28,11 +29,12 @@
   .feedback {
     width: 100%;
     padding: 80px 0 105px;
-    background-image: none;
+
   }
 
   .feedback__wrapper {
     justify-content: center;
+    background-image: none;
   }
 
   .feedback__inner-wrapper {

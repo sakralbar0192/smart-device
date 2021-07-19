@@ -38,7 +38,6 @@
 }
 
 .feature h3 {
-  max-height: 68px;
   margin: 0 0 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -46,16 +45,13 @@
   line-height: 34px;
   color: $accent-color;
   transition: all ease 2s;
-  overflow: auto;
 }
 
 .feature p {
-  height: 103px;
   margin: 0;
   @include textFontStyles;
   color: $primary-color;
   transition: all ease 2s;
-  overflow: auto;
 }
 
 @media (max-width: $desktop-width) {
@@ -104,6 +100,10 @@
         width: 31px;
         height: 32px;
       }
+
+      p {
+        min-width: 250px;
+      }
     }
 
     &--conf {
@@ -133,6 +133,5 @@
 
   .feature p  {
     height: auto;
-    max-height: 182px;
   }
 }
