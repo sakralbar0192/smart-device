@@ -13,7 +13,7 @@
 
 .social-block a{
   &:hover {
-    .social-block__svg {
+    svg {
       fill: $accent-color;
     }
   }

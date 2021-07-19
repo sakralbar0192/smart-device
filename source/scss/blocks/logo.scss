@@ -6,10 +6,10 @@
 
     .logo__text-wrapper p:first-child {
       margin: 5px 0 -5px;
-    }
 
-    .logo__text-wrapper p:first-child svg {
-      fill: $logo-color-one;
+      svg {
+        fill: $logo-color-one;
+      }
     }
   }
 }
@@ -18,8 +18,7 @@
   display: flex;
 
   &:hover {
-    .logo__text-wrapper svg,
-    .logo__bottom-text-svg {
+    .logo__text-wrapper p svg {
       fill: $accent-color;
     }
   }
